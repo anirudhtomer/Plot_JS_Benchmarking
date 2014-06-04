@@ -103,8 +103,8 @@ var parsingPerformance = new window.CodePerformance();
 Use the parsingPerformance object to call markStartTime and markEndTime.*/
 
 //Now plot both graphs
-codePerformance.plotGraph("HTTP Calls Performance", "htmlPerfGraph");
-codePerformance.plotGraph("Parsing Performance", "parsingPerfGraph");
+httpCallPerformance.plotGraph("HTTP Calls Performance", "htmlPerfGraph");
+parsingPerformance.plotGraph("Parsing Performance", "parsingPerfGraph");
 ```
 
 License
