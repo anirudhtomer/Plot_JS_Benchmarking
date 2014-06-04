@@ -25,7 +25,7 @@ For graphing time taken by various code blocks it uses [jqPlot] library. You can
 
 Dependencies
 ------------
-The following dependencies are needed only if you want to use jqPlot graphing. In case you want to use this library just to managing timing calculations then do not include jQuery or jqPlot and it will still work fine. 
+The following dependencies are needed only if you want to use jqPlot graphing. In case you want to use this library just for managing timing calculations and don't want to graph anything then do not include jQuery or jqPlot and it will still work fine. 
 
 * jQuery
 * [jqPlot]: These plugins of jqPlot are used [jqplot.barRenderer.js], [jqplot.categoryAxisRenderer.js] and [jqplot.pointLabels.js]
