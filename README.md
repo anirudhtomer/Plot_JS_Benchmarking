@@ -1,4 +1,4 @@
-jscodeperformance
+jscodeperfgraph
 =========
 
 A library for measuring and graphing time spent in javascript code blocks. It is inspired by HTML-5 [User Timing API].
@@ -11,7 +11,7 @@ Earlier I used to do time calculations using Date object or HTML-5 [User Timing 
 
 But that was quite time consuming and so I decided to write a small library which would allow me to plot all the time values in a graph somewhere in my own web application. On just a temporary link, button or tab where I will click and see the graph in an instant.
 
-This is what jscodeperformance does. It uses the [User Timing API] provided by HTML-5 browsers so that one can measure time taken by various components of his/her code with microsecond accuracy. It also works with browsers which do not support [DOMHighResTimeStamp], by switching to Date object for calculations. It then allows users to make a simple plotGraph() call and plot all measurements on a bar chart. [jqPlot] is used by default for graphing, but one can use his/her own favourite as well.
+This is what jscodeperfgraph does. It uses the [User Timing API] provided by HTML-5 browsers so that one can measure time taken by various components of his/her code with microsecond accuracy. It also works with browsers which do not support [DOMHighResTimeStamp], by switching to Date object for calculations. It then allows users to make a simple plotGraph() call and plot all measurements on a bar chart. [jqPlot] is used by default for graphing, but one can use his/her own favourite as well.
 
 Demo links with source code
 ----------
