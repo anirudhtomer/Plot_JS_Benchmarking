@@ -110,7 +110,7 @@ License
 -------
 [MIT License]
 
-[MIT License]:http://opensource.org/licenses/MIT
+[MIT License]:https://github.com/anirudhtomer/jscodeperfgraph/blob/master/LICENSE
 [User Timing API]:http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
 [DOMHighResTimeStamp]:http://www.w3.org/TR/hr-time/#sec-DOMHighResTimeStamp
 [jqPlot]:http://www.jqplot.com/
