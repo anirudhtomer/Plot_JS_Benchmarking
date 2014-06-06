@@ -5,7 +5,7 @@ A library for measuring and graphing time spent in javascript code blocks. It is
 
 Motivation and What it does?
 ---------------------------
-As a javascript developer I sometimes want to know how much time it takes to parse my json objects, how much time does my for loop takes or how much time my http calls take. And I want to do a quick comparative analysis of the various time values.
+As a javascript developer I sometimes want to know how much time it takes to parse my json objects, how much time does my for loop takes or how much time my HTTP calls take. And I want to do a quick comparative analysis of the various time values.
 
 Earlier I used to do time calculations using Date object or HTML-5 [User Timing API] and send them to server in form of a json. From there I would dump them in excel sheet and plot the graphs.
 
@@ -15,6 +15,7 @@ This is what jscodeperfgraph does. It uses the [User Timing API] provided by HTM
 
 Demo links with source code
 ----------
+I've used setTimeout() to introduce delay which should be assumed analogous to processing time for real applications.
 * [Demo without dependencies]
 * [Demo with custom graphing library]
 * [Demo in default mode]
@@ -27,12 +28,12 @@ For graphing time taken by various code blocks it uses [jqPlot] library. You can
 
 Dependencies
 ------------
-The following dependencies are needed only if you want to use jqPlot graphing. In case you want to use this library just for managing timing calculations and don't want to graph anything then do not include jQuery or jqPlot and it will still work fine. 
+The following dependencies are needed only if you want to use jqPlot graphing. In case you want to use this library just for managing timing calculations and don't want to graph anything then do not include jQuery or jqPlot and it will still work fine. Check this [Demo without dependencies].
 
 * jQuery
 * [jqPlot]: These plugins of jqPlot are used [jqplot.barRenderer.js], [jqplot.categoryAxisRenderer.js] and [jqplot.pointLabels.js]
 
-You can skip jqPlot as a dependency if you want to use some other charting library.
+You can skip jqPlot as a dependency if you want to use some other charting library. Check this [Demo with custom graphing library].
 
 How to use?
 --------------
@@ -45,6 +46,7 @@ var codePerformance = new window.CodePerformance();
 
 #### To measure the time taken for a code block use the following.####
 ```
+//The first parameter can be any name that you would like to give to your code block.
 codePerformance.markStartTime("Json Parsing Time");
 
 /*Assume code of json parsing here*/
