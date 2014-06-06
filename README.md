@@ -15,7 +15,7 @@ This is what jscodeperfgraph does. It uses the [User Timing API] provided by HTM
 
 Demo links with source code
 ----------
-I've used setTimeout() to introduce delay which should be assumed analogous to processing time for real applications. I am hosting my js files via [RawGit] and so if you find the js files are not loaded please let me know.
+I've used setTimeout() to introduce delay which should be assumed analogous to processing time for real applications. I am hosting my js files in the jsfiddle demo via [RawGit] and so if you find the js files are not loaded please let me know.
 * [Demo without dependencies]
 * [Demo with custom graphing library]
 * [Demo in default mode]
