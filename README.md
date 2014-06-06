@@ -15,7 +15,9 @@ This is what jscodeperfgraph does. It uses the [User Timing API] provided by HTM
 
 Demo links with source code
 ----------
-* []
+* [Demo without dependencies]
+* [Demo with custom graphing library]
+* [Demo in default mode]
 
 How it works?
 -----------
@@ -76,7 +78,7 @@ for(var i=0;i<allMarkers.length; i++){
 ```
 
 #### To see a graph plotted with jqPlot use the following ####
-ATTENTION: You will need to include jqPlot libraries to make this work. Check this demo.
+ATTENTION: You will need to include jqPlot libraries to make this work. Check this [Demo in default mode].
 ```
 //HTML
 <div id="foo" style="height: 500px; width:900px;"></div>
@@ -115,6 +117,9 @@ License
 [User Timing API]:http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
 [DOMHighResTimeStamp]:http://www.w3.org/TR/hr-time/#sec-DOMHighResTimeStamp
 [jqPlot]:http://www.jqplot.com/
-[jqplot.barRenderer.js]: http://www.jqplot.com/docs/files/plugins/jqplot-barRenderer-js.html
-[jqplot.categoryAxisRenderer.js]: http://www.jqplot.com/docs/files/plugins/jqplot-categoryAxisRenderer-js.html
+[jqplot.barRenderer.js]:http://www.jqplot.com/docs/files/plugins/jqplot-barRenderer-js.html
+[jqplot.categoryAxisRenderer.js]:http://www.jqplot.com/docs/files/plugins/jqplot-categoryAxisRenderer-js.html
 [jqplot.pointLabels.js]:http://www.jqplot.com/docs/files/plugins/jqplot-pointLabels-js.html
+[Demo without dependencies]:http://jsfiddle.net/SwapnaSK/LrwTf/
+[Demo with custom graphing library]:http://jsfiddle.net/SwapnaSK/Dz76c/
+[Demo in default mode]:http://jsfiddle.net/SwapnaSK/Xphj5/
