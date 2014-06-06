@@ -183,12 +183,17 @@ function ValuesHashMap(){
 					}
 				}
 			};
-		}else{
-			console.error("plotGraph() call will not work because either jqplot or its plugins BarRenderer and CategoryAxisRenderer are not available");
+		}
+		else{
+			if(window.console){
+				console.warn("plotGraph() call will not work because either jqplot or its plugins BarRenderer and CategoryAxisRenderer are not available");
+			}
 		}
 	}
 	else{
-		console.error("plotGraph() call will not work because jQuery is not available");
+		if(window.console){
+			console.warn("plotGraph() call will not work because jQuery is not available");
+		}
 	}
 
 	function CodePerformance(){
@@ -245,8 +250,11 @@ function ValuesHashMap(){
 				}
 				plot = $.jqplot(divId, [chartData], barGraphConfig);
 			}
-		}else{
-			console.error("plotGraph() call will not work because either jQuery or jqPlot or its plugins BarRenderer and CategoryAxisRenderer are not available");
+		}
+		else{
+			if(window.console){
+				console.warn("plotGraph() call will not work because either jQuery or jqPlot or its plugins BarRenderer and CategoryAxisRenderer are not available");
+			}
 		}
 
 		return retObj;
