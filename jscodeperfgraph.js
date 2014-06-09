@@ -4,7 +4,7 @@ function HashSet(){
 
 	this.add = function(key){
 
-		if(this.keys[key] === undefined){
+		if(typeof this.keys[key] === 'undefined'){
 			this.length++;
 		}
 
@@ -20,7 +20,7 @@ function HashSet(){
 	};
 
 	this.containsKey = function(key){
-		return this.keys[key] !== undefined;
+		return typeof this.keys[key] !== 'undefined';
 	};
 
 	this.remove = function(key){
@@ -116,7 +116,7 @@ function ValuesHashMap(){
 		while(this.emptyIndices.length > 0){
 			var emptyIndex = this.emptyIndices.pop();
 
-			while(this.valuesArr[this.valuesArr.length - 1] == undefined){
+			while(typeof this.valuesArr[this.valuesArr.length - 1] === 'undefined'){
 				this.valuesArr.pop();
 			}
 
@@ -131,14 +131,20 @@ function ValuesHashMap(){
 
 (function(){
 
-	var TimeMeasurer = performance || window.performance || Date;
+	var TimeMeasurer = Date;
+
+	if(typeof performance !== 'undefined'){
+		TimeMeasurer = performance;
+	}else if(typeof window.performance!== 'undefined'){
+		TimeMeasurer = window.performance;
+	}
 
 	var timeFormat = "%.3f";
 	var jQueryAvailable = typeof jQuery !== 'undefined';
 	var allRequiredJqPlotPluginsAvailable = false;
 	var barGraphConfig = {};
 
-	if(TimeMeasurer.now === undefined){
+	if(typeof TimeMeasurer.now === 'undefined'){
 		TimeMeasurer = {
 			now: function(){
 				return new Date().getTime();
@@ -245,7 +251,7 @@ function ValuesHashMap(){
 					chartData[index][1] = markerValues[index].duration;
 				}
 
-				if(plot !== undefined){
+				if(typeof plot !== 'undefined'){
 					plot.destroy();
 				}
 				plot = $.jqplot(divId, [chartData], barGraphConfig);
