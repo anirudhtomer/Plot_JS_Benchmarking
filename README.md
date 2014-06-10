@@ -91,7 +91,7 @@ codePerformance.plotGraph("Title of my graph", "foo");
 Do not add a # in front of the id.*/
 ```
 
-#### You want see measure different performance metrics in different graphs? ####
+#### You want to plot different performance metrics in different graphs? ####
 Suppose you want to see time taken by various HTTP calls in one jqPlot graph and time taken by parsing in another jqPlot graph. Then do this.
 ```
 //HTML
