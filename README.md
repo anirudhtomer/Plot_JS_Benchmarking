@@ -124,5 +124,5 @@ License
 [jqplot.pointLabels.js]:http://www.jqplot.com/docs/files/plugins/jqplot-pointLabels-js.html
 [Demo without dependencies]:http://jsfiddle.net/SwapnaSK/LrwTf/
 [Demo with custom graphing library]:http://jsfiddle.net/SwapnaSK/Dz76c/
-[Demo in default mode]:http://jsfiddle.net/SwapnaSK/Xphj5/
+[Demo in default mode]:http://jsfiddle.net/anirudhtomer/Xphj5/58/
 [RawGit]:http://rawgit.com/
