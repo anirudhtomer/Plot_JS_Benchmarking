@@ -1,4 +1,4 @@
-jscodeperfgraph
+Plot_JS_Benchmarking
 =========
 
 A library for measuring and graphing time spent in javascript code blocks. It is inspired by HTML-5 [User Timing API].
